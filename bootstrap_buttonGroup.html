@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_buttonGroup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>按钮组学习</h2>
+        <p>根据理解，也就是几个按钮放在一起的样子，感觉页面用不到啊啊啊</p>
+        <div class="btn-group btn-lg btn-group-vertical">
+            <!--在btn-group元素中可以设置按钮组的大小lg|sm,btn-group-vertical设置垂直结构的提交按钮-->
+            <button type="button" class="btn btn-primary">11111</button>
+            <button type="button" class="btn btn-primary">22222</button>
+            <button type="button" class="btn btn-primary">33333</button>
+            <a href="#" class="btn btn-primary">嗯嗯</a>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">下拉按钮</button>
+            <!--data-toggle下拉展示，dropdown-toggle显示下拉按钮样式-->
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1111</a>
+                <a href="#" class="dropdown-item">2222</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">组合下拉按钮</button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
