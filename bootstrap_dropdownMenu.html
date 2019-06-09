@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_dropdownMenu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p>下拉列表</p>
+        <p>下拉列表</p>
+        <p>下拉列表</p>
+        <p>下拉列表</p>
+        <p>下拉列表</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                dropdown menu
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item active">111</a>
+                <a href="#" class="dropdown-item disabled">222</a>
+                <a href="#" class="dropdown-item">333</a>
+                <div class=dropdown-divider></div>
+                <!--dropdown-divider：分隔符-->
+                <a href="#" class="dropdown-item">444</a>
+                <h5 class="dropdown-header">选项小标题</h5>
+                <a href="#" class="dropdown-item">000</a>
+                <!--dropup：不支持dropdown-header与dropdown-divider-->
+            </div>
+        </div>
+
+
+        <h2>下拉菜单</h2>
+        <p> .dropup 类用于设置下拉菜单向上弹出：</p><br>
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

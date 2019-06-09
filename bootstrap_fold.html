@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_fold</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>简单折叠测试</h3>
+        <p>先简单测试一哈</p>
+        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">
+            collapse
+        </button>
+        <div class="collapse" id="demo">
+            <h4>其实我也很想出现的，就是得等待一下</h4>
+            <p>好的我出现了，你也看到我了</p>
+        </div>
+        <hr>
+        <h3>试试a标签用法</h3>
+        <p>就目前来看这样还是很方便的</p>
+        <a href="#demo1" class="btn btn-info" data-toggle="collapse">collapse</a>
+        <div class="collapse show" id="demo1">
+            <p>是这样的吗，世界这么大，不可以安排真的很难见面的</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="display-5">手风琴实例测试</h2>
+        <p>可以用来写目录文档之类的东西</p>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#key1" class="card-link" data-toggle="collapse">key1</a>
+                </div>
+            </div>
+            <div class="collapse" id="key1" data-parent="#accordion">
+                <div class="card-body">
+                    <p>我是按键一啊啊啊</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#key2" class="collapsed card-link" data-toggle="collapse">ley2</a>
+                </div>
+            </div>
+            <div class="collapse" id="key2" data-parent="#accordion">
+                <div class="card-body">
+                    <p>按键<strong>二</strong>呀呀呀</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#key3" class="card-link collapsed" data-toggle="collapse">key3</a>
+                </div>
+                <div class="collapse" id="key3" data-parent="#accordion">
+                    <p>这是按键三</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

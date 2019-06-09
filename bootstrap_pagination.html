@@ -14,7 +14,30 @@
 </head>
 <body>
     <div class="container">
-
+        <h2>分页测试</h2>
+        <p>分页对于页面来说设计比较麻烦，主要是页数以及异步刷新页面的麻烦操作比较棘手，这里练习一下样式</p>
+        <ul class="pagination pagination-lg">
+            <!--pagination-lg 类设置大字体的分页条目，.pagination-sm 类设置小字体的分页条目-->
+            <li class="page-item disabled"><a class="page-link">previous</a></li>
+            <!--disabled：表示当前按钮不可用-->
+            <li class="page-item"><a class="page-link btn btn-info active">1</a></li>
+            <li class="page-item"><a class="page-link   ">2</a></li>
+            <li class="page-item active"><a class="page-link">3</a></li>
+            <!--active：显示当前展示页面页码-->
+            <li class="page-item"><a class="page-link">next</a></li>
+            <li class="page-item"><a class="page-link">total</a></li>
+            <li class="page-item"><span class="page-link text-dark">10</span></li>
+        </ul>
+        <hr>
+        <h2>面包屑导航栏breadcrumb</h2>
+        <p>面包屑导航栏类似于商城最上面的导航栏，可以进行页面跳转以及页面页面信息切换</p>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">1111</a></li>
+            <li class="breadcrumb-item"><a href="#">2222</a></li>
+            <li class="breadcrumb-item"><a href="#">3333</a></li>
+            <li class="breadcrumb-item"><a href="#">4444</a></li>
+            <li class="breadcrumb-item"><span>5555</span></li>
+        </ul>
     </div>
 </body>
 </html>

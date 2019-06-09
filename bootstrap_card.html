@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>card练习</h2>
+        <p>就目前来看，在展示个人资料时候可以用到，其他用处可以后续补充研究</p>
+        <div class="card bg-light text-dark" style="width: 40%">
+            <div class="card-header">
+                <h3 class="card-subtitle">card头</h3>
+            </div>
+            <img src="resource/img/dog.PNG" class="card-img-top" style="width: 100%;">
+            <!--<div class="card-img-overlay">-->
+                <!--<h3 class="card-title">出现在图片上面</h3>-->
+                <!--<p class="text-danger card-text">是啊，很意外呢，出现在这里</p>-->
+            <!--</div>-->
+            <div class="card-body">
+                <h3 class="card-title">连接card</h3>
+                <p class="card-text">这个用处真的不大，没必要深入联系研究</p>
+                <a href="#" class="card-link">111</a>
+                <a href="#" class="card-link">222</a>
+            </div>
+            <div class="card-footer">
+                <h5 class="text-warning card-subtitle">编号：9958</h5>
+            </div>
+        </div>
+        <br>
+        <h2>文字覆盖图片</h2>
+        <p>如果图片要设置为背景，可以使用 .card-img-overlay 类:</p>
+        <div class="card img-fluid" style="width:500px">
+            <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+            <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
