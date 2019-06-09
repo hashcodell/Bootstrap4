@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>常规导航栏</h2>
+        <p>导航栏对于一个网站是灵魂的存在，直接关系到用户对于网站的操作舒适程度</p>
+        <ul class="nav justify-content-center nav-tabs">
+            <!--nav：tabs，pills，justified-->
+            <!--justify-content：center：居中显示，around：平均分布，end右对齐-->
+            <li class="nav-item"><a class="nav-link active">111</a></li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle-split" data-toggle="dropdown" href="#">222</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">2221</a>
+                    <a class="dropdown-item active" href="#">2222</a>
+                    <a class="dropdown-item" href="#">2223</a>
+                    <h4 class="dropdown-header">试试吧</h4>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item disabled" href="#">2224</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link">333</a></li>
+            <li class="nav-item"><a class="nav-link">444</a></li>
+            <li class="nav-item"><a class="nav-link">555</a></li>
+        </ul>
+        <hr/>
+        <h2>垂直结构的导航栏</h2>
+        <ul class="nav flex-column">
+           <li class="nav-item"><a href="#" class="nav-link">111</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">222</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">333</a></li>
+        </ul>
+        <hr>
+        <p>做一个pills导航栏带下拉列表的</p>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active">111</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">222</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">2221</a>
+                    <a class="dropdown-item" href="#">2222</a>
+                    <a class="dropdown-item" href="#">2223</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link disabled">333</a></li>
+        </ul>
+        <hr>
+        <h2>选项卡切换</h2>
+        <br>
+        <ul class="nav nav-tabs">
+            <!--如果是pill的话，只需要将上下代码中的tabs换成pills即可-->
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#spring">spring</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#summer">summer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#autumn">autumn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#winter">winter</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="container tab-pane active" id="spring"><br>
+                <h4>鸟语花香</h4>
+                <p>对，没事去抓花蝴蝶</p>
+            </div>
+            <div class="container tab-pane fade" id="summer"><br>
+                <h4>夏雷滚滚</h4>
+                <p>青空浪卷云涌</p>
+            </div>
+            <div class="container tab-pane fade" id="autumn"><br>
+                <h4>秋高气爽</h4>
+                <p>叶落纷纷回时路</p>
+            </div>
+            <div class="container tab-pane fade" id="winter"><br>
+                <h4>冬装素裹</h4>
+                <p>堆他个cxk</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
