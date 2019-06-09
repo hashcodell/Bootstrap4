@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_inputGroup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-1 col-lg-4">
+        <form class="input-group">
+            <div class="input-group-prepend">
+                <span class="btn btn-info">+</span>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="btn btn-info">-</span>
+            </div>
+        </form>
+        <br>
+        <div class="input-group input-group-sm">
+            <div class="input-group-prepend"><span class="btn btn-info">+</span></div>
+            <input type="text" class="form-control">
+            <div class="input-group-append"><span class="btn btn-info">+</span></div>
+        </div>
+        <hr>
+        <div class="input-group">
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">select addr</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">111</a>
+                <a class="dropdown-item" href="#">222</a>
+                <a class="dropdown-item" href="#">333</a>
+            </div>
+            <input type="text" class="form-control">
+            <button type="button" class="btn btn-success">GO</button>
+        </div>
+        <hr>
+        <label for="addr">输入地址：</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="addr" placeholder="please...">
+            <div class="input-group-append">
+                <span class="input-group-text">@163.com</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

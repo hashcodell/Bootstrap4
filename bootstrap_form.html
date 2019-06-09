@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>表格</h2>
+        <form class="form-inline">
+            <!--form默认垂直结构，form-inline屏幕宽度在大于等于 576px 时才会水平显示。如果小于 576px 则会生成堆叠表单。-->
+            <div class="form-group">
+                <label for="email">Email：</label>
+                <input type="email" class="form-control" id="email" placeholder="please...">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password：</label>
+                <input type="password" class="form-control" id="pwd" placeholder="enter pwd...">
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">remeber me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success">submit</button>
+        </form>
+    </div>
+</body>
+</html>

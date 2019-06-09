@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_formControl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <p>富文本框</p>
+        <div class="form-control">
+            <label for="textarea">comment：</label>
+            <textarea class="form-control" id="textarea" rows="5"></textarea>
+        </div>
+        <hr>
+        <p>复选框</p>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label"><input type="checkbox">option1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label"><input type="checkbox">option2</label>
+        </div>
+        <div class="form-check form-check-inline disabled">
+            <label class="form-check-label"><input type="checkbox">option3</label>
+        </div>
+        <hr>
+        <p>单选框</p>
+        <form>
+            <label class="custom-radio"><input type="radio" name="opt">option1</label>
+            <label class="custom-radio"><input type="radio" name="opt">option2</label>
+            <label class="custom-radio disabled"><input type="radio" name="opt">option3</label>
+        </form>
+        <br>
+        <p>下拉框</p>
+        <form class="form-group">
+            <label for="select1">单选下拉框</label>
+            <select class="form-control" id="select1">
+                <option>111</option>
+                <option>222</option>
+                <option>333</option>
+            </select>
+        </form>
+        <br>
+        <p>多选框，shift+左键</p>
+        <form class="form-group">
+            <label for="select2">多选框</label>
+            <select multiple class="form-control" id="select2">
+                <option>111</option>
+                <option>222</option>
+                <option>333</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
