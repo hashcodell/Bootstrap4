@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap_customerForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--width=device-width 表示宽度是设备屏幕的宽度。
+    initial-scale=1 表示初始的缩放比例。
+    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <link rel="stylesheet" href="resource/css/bootstrap.css">
+    <script src="resource/js/jquery-3.3.1.js"></script>
+    <script src="resource/js/popper.min.js"></script>
+    <script src="resource/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>自定义复选框</h2>
+        <form >
+            <div class="custom-control custom-checkbox custom-control-inline mb-3">
+                <input type="checkbox" class="custom-control-input" id="checkbox">
+                <label class="custom-control-label" for="checkbox">自定义复选框</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline mb-3">
+                <input type="checkbox" class="custom-control-input" id="checkbox2">
+                <label class="custom-control-label" for="checkbox2">自定义复选框</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="checkbox3">
+                <label class="custom-control-label" for="checkbox3">自定义复选框</label>
+            </div>
+        </form>
+        <hr>
+        <p>单选框</p>
+        <form>
+            <div class="custom-control custom-radio custom-control-inline mb-3">
+                <input type="radio" class="custom-control-input" id="radio1" name="radiobox">
+                <label class="custom-control-label" for="radio1">radiobox1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio" name="radiobox">
+                <label class="custom-control-label" for="customRadio">自定义单选框</label>
+            </div>
+        </form>
+        <hr>
+        <h2>自定义选择菜单</h2>
+        <p>创建自定义选择菜单可以在 select 元素上添加 .custom-select 类:</p>
+        <form>
+            <select name="cars" class="custom-select-sm">
+                <option selected>自定义选择菜单</option>
+                <option value="Google">Google</option>
+                <option value="Runoob">Runoob</option>
+                <option value="Taobao">Taobao</option>
+            </select>
+            <select name="cars" class="custom-select-lg">
+                <option selected>自定义选择菜单</option>
+                <option value="Google">Google</option>
+                <option value="Runoob">Runoob</option>
+                <option value="Taobao">Taobao</option>
+            </select>
+        </form>
+        <hr>
+        <form>
+            <div class="custom-control">
+                <input type="range" class="custom-range">
+            </div>
+        </form>
+        <hr>
+        <p>自定义上传框</p>
+        <form>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="file1" name="file2">
+                <label class="custom-file-label" for="file1">borwse</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
